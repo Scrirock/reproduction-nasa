@@ -13,7 +13,7 @@ body {
     width: 100%;
     font-size: 2rem;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #ebebeb;
+    background-color: #91ceff;
 }
 
 img{
@@ -53,6 +53,13 @@ nav ul li{
     display: inline-block;
 }
 
+nav ul li:hover{
+    background-color: #66b9ff;
+}
+
+nav ul[class="sous"] > a:hover{
+    background-color: #295bdc;
+}
 
 nav a{
     display: block;
@@ -79,7 +86,7 @@ nav a:hover{
 nav > ul li:hover .sous{
     display: block;
     width: 200%;
-    background-color: #4787c3;
+    background-color: #66b9ff;
 }
 
 .sous li{
@@ -91,11 +98,6 @@ nav > ul li:hover .sous{
 .sous a{
     padding: 10px;
     border-bottom: none;
-}
-
-.sous a:hover{
-    border-bottom: none;
-    background-color: RGBa(200,200,200,0.1);
 }
 
 .joli{
@@ -122,4 +124,28 @@ i{
     left: 145rem;
     top: -21rem;
     color: #23367d;
+}
+
+.secondMenu a{
+    position: relative;
+    display: inline-block;
+    border-left: 1px solid #1f38a2;
+    background-color: cornflowerblue;
+    margin: -4px;
+    padding: 15px;
+    font-size: 1.5rem;
+    top: -15rem;
+    left: 20rem;
+}
+
+.secondMenu a:hover{
+    background-color: #66b9ff;
+}
+
+.secondMenu:last-child{
+    border: none;
+}
+
+.menu{
+    display: inline-block;
 }
