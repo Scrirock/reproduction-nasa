@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #ebebeb;
+}
+
+img{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    z-index: 3;
+}
+
+nav{
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    background-color: #4787c3;
+    height: 5rem;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li[class="deroulant"]{
+    border-right: 3px solid #C0C0C0;
+    padding: 0 20px;
+    left: 270px;
+    top: -145px;
+}
+
+nav li:last-child[class="deroulant"]{
+    border: none;
+}
+
+nav ul li{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #23367d;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+}
+
+nav a:hover{
+    color: #3b0b7d;
+    border-bottom: 2px solid #3b0b7d;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+    width: 200%;
+    background-color: #4787c3;
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+.joli{
+    position: relative;
+    top: -152px;
+    width: 100%;
+}
+
+input{
+    background-color: #4787c3;
+    height: 3rem;
+    color: #23367d;
+    position: relative;
+    left: 127rem;
+    top: -18.5rem;
+}
+
+input:focus{
+    border: 3px solid #3b0b7d;
+}
+
+i{
+    position: relative;
+    left: 145rem;
+    top: -21rem;
+    color: #23367d;
+}
